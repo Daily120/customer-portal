@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import LoginPageHolder from '../components/LoginPageHolder/LoginPageHolder';
+import BasicInfo from '../components/BasicInfo/BasicInfo';
 
 class App extends Component {
   constructor() {
@@ -12,7 +14,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
+        {/* <LoginPageHolder /> */}
+        <BasicInfo />
       </div>
     );
   }

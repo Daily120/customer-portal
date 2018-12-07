@@ -1,0 +1,23 @@
+#loginForm {
+    width: 500px;
+    height: 120px;
+}
+
+.div-under-loginForm {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30px 30px 30px;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+}
+
+.label {
+    text-align: right;
+    font-weight: 600;
+}
+
+.submitButton {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    width: 50px;
+}
