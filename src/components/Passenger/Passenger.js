@@ -1,7 +1,6 @@
 import React from 'react';
 
 const deletePassengerFromUI = (passengerRow) => {
-    console.log(passengerRow);
     passengerRow.parentNode.parentNode.parentNode.removeChild(passengerRow.parentNode.parentNode);
 }
 
