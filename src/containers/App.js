@@ -29,6 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <AddPassenger />
         <Header />
         {localStorage.token ? null : <LoginForm app = {this} />}
         {this.state.customer ? <CustomerDetailsPage app = {this}/> : null}
