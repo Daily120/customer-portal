@@ -3,6 +3,8 @@ import './App.css';
 import Header from '../components/Header/Header';
 import LoginForm from '../components/LoginForm/LoginForm';
 import CustomerDetailsPage from '../components/CustomerDetailsPage/CustomerDetailsPage';
+import AddPassenger from '../components/AddPassenger/AddPassenger';
+import AddTrip from '../components/AddTrip/AddTrip';
 
 class App extends Component {
   constructor() {
