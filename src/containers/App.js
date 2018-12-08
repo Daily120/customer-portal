@@ -10,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-
+      
     }
   }
 
@@ -30,9 +30,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {
-          localStorage.token ? <CustomerDetailsPage /> : <LoginForm app={this} /> 
-        }
+        {localStorage.token ? null : <LoginForm app = {this} />}
+        {this.state.customer ? <CustomerDetailsPage app = {this}/> : null}
       </div>
     );
   }

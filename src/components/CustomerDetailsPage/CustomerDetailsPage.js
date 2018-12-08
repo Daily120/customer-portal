@@ -4,11 +4,11 @@ import BasicInfo from '../BasicInfo/BasicInfo';
 import Passengers from '../Passengers/Passengers';
 import Trips from '../Trips/Trips';
 
-const CustomerDetailsPage = () => {
+const CustomerDetailsPage = ({ app }) => {
 
     return (
         <div id="customerDetailsPage">
-            <BasicInfo />
+            <BasicInfo app={app.state.customer}/>
             <Passengers />
             <Trips />
         </div>
