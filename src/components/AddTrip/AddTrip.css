@@ -1,0 +1,91 @@
+#addTrip {
+    width: 800px;
+    height: 505px;
+    border: 1.3px solid black;
+    border-radius: 2px;
+    margin: 0 0 25px 50px;
+    display: flex;
+    flex-flow: column;
+}
+
+.add-trip-P {
+    margin: 15px 0 0 15px;
+    font-weight: 700;
+}
+
+.div-under-addTrip {
+    display: grid;
+    grid-template-columns: 100px 640px;
+    grid-template-rows: 35px 35px 35px 35px;
+    grid-column-gap: 40px;
+    grid-row-gap: 25px;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: 1px solid gray;
+}
+
+.div-under-addTrip p {
+    justify-self: end;
+    font-weight: 700;
+    align-self: center;
+    text-align: end;
+}
+
+.grid-with-checkbox {
+    display: grid;
+    grid-template-columns: 100px 50px 150px;
+    grid-template-rows: 20px 20px 20px 40px;
+    grid-row-gap: 5px;
+    margin: 20px 0 0 10px;
+}
+
+.grid-with-checkbox input {
+    justify-self: end;
+    align-self: end;
+}
+
+.grid-with-checkbox label {
+    align-self: self-end;
+}
+
+.grid-with-checkbox-P {
+    justify-self: end; 
+    font-weight: 700;
+    align-self: center;
+}
+
+#miss-maria-ritney {
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.missMaria {
+    grid-area: 2 / 3 / 2 / 4;
+}
+
+#mr-paul-southwood {
+    grid-area: 3 / 2 / 3 / 3;
+}
+
+.mrPaul {
+    grid-area: 3 / 3 / 3 / 4;
+}
+
+.saveButtonTrip {
+    grid-area: 4 / 2 / 4 / 3;
+    width: 60px;
+    height: 35px;
+    margin-left: 33px;
+    margin-top: 10px;
+    border: 1px solid #CDD6D5;
+    border-radius: 4px;
+}
+
+.cancelTripButton {
+    align-self: flex-end;
+    margin-right: 15px;
+    width: 70px;
+    height: 35px;
+    border: 1px solid #CDD6D5;
+    border-radius: 4px;
+}

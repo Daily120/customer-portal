@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import LoginPage from '../components/LoginPage/LoginPage';
 import CustomerDetailsPage from '../components/CustomerDetailsPage/CustomerDetailsPage';
+import AddPassenger from '../components/AddPassenger/AddPassenger';
+import AddTrip from '../components/AddTrip/AddTrip';
 
 class App extends Component {
   constructor() {
@@ -15,7 +17,9 @@ class App extends Component {
     return (
       <div className="App">
         {/* <LoginPage /> */}
-        <CustomerDetailsPage />
+        {/* <CustomerDetailsPage /> */}
+        <AddPassenger />
+        <AddTrip />
       </div>
     );
   }
