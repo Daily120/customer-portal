@@ -1,0 +1,58 @@
+#trips {
+    height: 255px;
+    width: 1070px;
+    border: 1.3px solid #D0E8F5;
+    border-radius: 2px;
+    display: flex;
+    flex-flow: column;
+    margin: 0 0 25px 50px;
+}
+
+#trips p {
+    background-color: #D0E8F5;
+    color: #75A3BB;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+table#table-trips {
+    border-collapse: collapse;
+    width: 1050px;
+    height: 135px;
+    margin-left: 10px;
+}
+
+th {
+    text-align: left;
+}
+
+.tripsTBody {
+    align-content: center;
+}
+
+table tr:first-child {
+    background-color: #E0E0E0;
+}
+
+.addButton {
+    height: 30px;
+    width: 40px;
+    align-self: flex-end;
+    margin-right: 15px;
+    margin-top: 25px;
+    background-color: #54A454;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.deleteButton {
+    width: 70px;
+    height: 30px;
+    background-color: #C1322E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}

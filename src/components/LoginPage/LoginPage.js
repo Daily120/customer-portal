@@ -1,16 +1,16 @@
 import React from 'react';
-import './LoginPageHolder.css';
+import './LoginPage.css';
 import Header from '../Header/Header';
 import LoginForm from '../LoginForm/LoginForm';
 
-const LoginPageHolder = () => {
+const LoginPage = () => {
 
     return (
-        <div id="loginPageHolder">
+        <div id="loginPage">
             <Header />
             <LoginForm />
         </div>
     )
 }
 
-export default LoginPageHolder;
+export default LoginPage;

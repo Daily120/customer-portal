@@ -5,8 +5,8 @@ const BasicInfo = () => {
 
     return (
         <div id="basicInfo">
+                <p>Basic Info</p>
             <div className="div-under-basicInfo">
-                <h3>Basic Info</h3>
                 <label htmlFor="basicInfoEmailField">Email</label>
                 <input type="email" name="basicInfoEmailField" id="basicInfoEmailField"/>
                 <label htmlFor="nameField">Name</label>
