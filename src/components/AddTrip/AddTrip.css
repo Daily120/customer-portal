@@ -1,6 +1,5 @@
 #addTrip {
     width: 800px;
-    height: 505px;
     border: 1.3px solid black;
     border-radius: 2px;
     margin: 0 0 25px 50px;
@@ -53,22 +52,6 @@
     justify-self: end; 
     font-weight: 700;
     align-self: center;
-}
-
-#miss-maria-ritney {
-    grid-area: 2 / 2 / 2 / 3;
-}
-
-.missMaria {
-    grid-area: 2 / 3 / 2 / 4;
-}
-
-#mr-paul-southwood {
-    grid-area: 3 / 2 / 3 / 3;
-}
-
-.mrPaul {
-    grid-area: 3 / 3 / 3 / 4;
 }
 
 .saveButtonTrip {
