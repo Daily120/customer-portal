@@ -20,7 +20,7 @@ const TripsList = ({ tripsList, onAddTripClick }) => {
                     <th>Departure</th>
                     <th>Arrival</th>
                     <th>Passengers</th>
-                    <td>Options</td>
+                    <th>Options</th>
                 </tr>
                 { tripsArray }
                 </tbody>
