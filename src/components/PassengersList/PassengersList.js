@@ -2,7 +2,7 @@ import React from 'react';
 import './PassengersList.css';
 import Passenger from '../Passenger/Passenger';
 
-const PassengersList = ({ passengersList }) => {
+const PassengersList = ({ passengersList, onAddPassengerClick }) => {
     const passengersArray = passengersList.map(passenger =>{
         return <Passenger key={passenger.passengerid} id={passenger.passengerid} title={passenger.title}
                             firstName={passenger.firstname} surname={passenger.surname} passportId={passenger.passportid}/>
@@ -24,7 +24,7 @@ const PassengersList = ({ passengersList }) => {
                     {passengersArray}
                 </tbody>
             </table>
-            <button className="addButton">Add</button>
+            <button onClick={onAddPassengerClick} className="addButton">Add</button>
         </div>
     )
 }

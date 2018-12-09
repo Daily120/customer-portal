@@ -3,7 +3,6 @@ import './App.css';
 import Header from '../components/Header/Header';
 import LoginForm from '../components/LoginForm/LoginForm';
 import CustomerDetailsPage from '../components/CustomerDetailsPage/CustomerDetailsPage';
-import AddPassenger from '../components/AddPassenger/AddPassenger';
 
 class App extends Component {
   constructor() {
@@ -11,6 +10,30 @@ class App extends Component {
     this.state = {
       
     }
+  }
+
+  onAddPassengerClick = () => {
+    this.setState({
+      addPassengerWindow: true
+    })
+  }
+
+  onCancelAddPassengerClick = () => {
+    this.setState({
+      addPassengerWindow: false
+    })
+  }
+
+  onAddTripClick = () => {
+    this.setState({
+      addTripWindow: true
+    })
+  }
+
+  onCancelAddTripClick = () => {
+    this.setState({
+      addTripWindow: false
+    })
   }
 
   componentDidMount = () => {
@@ -30,7 +53,7 @@ class App extends Component {
       <div className="App">
         <Header />
         {localStorage.token ? null : <LoginForm app = {this} />}
-        {this.state.customer ? <CustomerDetailsPage app = {this}/> : null}
+        {this.state.customer ? <CustomerDetailsPage app = {this} /> : null}
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import './TripsList.css';
 import Trip from '../Trip/Trip';
 
-const TripsList = ({ tripsList }) => {
+const TripsList = ({ tripsList, onAddTripClick }) => {
     const tripsArray = tripsList.map(trip =>{
         return <Trip key={trip.trip_id} id={trip.trip_id} departureAirport={trip.departure_airport}
                             destinationAirport={trip.destination_airport} departureTime={trip.departure_time}
@@ -25,7 +25,7 @@ const TripsList = ({ tripsList }) => {
                 { tripsArray }
                 </tbody>
             </table>
-            <button className="addButton">Add</button>
+            <button onClick={onAddTripClick} className="addButton">Add</button>
         </div>
     )
 }

@@ -54,22 +54,22 @@ class AddPassenger extends Component {
             <div id="addPassenger">
                 <p className="add-Passenger-P">Add passenger</p>
                 <div className="div-under-addPassenger">
-                    <p>Title</p>
+                    <label htmlFor="titleSelect">Title</label>
                     <select onChange={this.onTitleChange} name="titleSelect" id="titleSelect">
                         <option value="Mr">Mr</option>
                         <option value="Mrss">Mrs</option>
                         <option value="Miss">Miss</option>
                         <option value="Ms">Ms</option>
                     </select>
-                    <p>Firstname</p>
+                    <label htmlFor="firstNameField">Firstname</label>
                     <input onChange={this.onFirstNameChange} type="text" name="firstNameField" id="firstNameField"/>
-                    <p>Surname</p>
+                    <label htmlFor="surnameField">Surname</label>
                     <input onChange={this.onSurnameChange} type="text" name="surnameField" id="surnameField"/>
-                    <p>Passportid</p>
+                    <label htmlFor="passportID">Passport ID</label>
                     <input onChange={this.onPassportIdChange} type="text" name="passportID" id="passportID"/>
                     <button onClick={this.handleAddPassenger} className="addPassengerButton">Add</button>
                 </div>
-                <button className="cancelButton">Cancel</button>
+                <button onClick={this.props.onCancelAddPassengerClick} className="cancelButton">Cancel</button>
             </div>
         )
     }

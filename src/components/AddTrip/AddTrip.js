@@ -108,12 +108,14 @@ class AddTrip extends Component {
                     <label htmlFor="arrivalTime">Arrival time</label>
                     <input onChange={this.onArrivalTimeChange} type="time" name="arrivalTime" id="arrivalTime" />
                 </div>
-                <label htmlFor="passengersCheckBoxList">Passengers</label>
-                <div className="grid-with-checkbox" id="passengersCheckBoxList">
-                    {this.passengersCheckBoxArray}
-                    <button onClick={this.handleAddTrip} className="saveButtonTrip">Save</button>
+                <div className="passengers">
+                    <label htmlFor="passengersCheckBoxList">Passengers: </label>
+                    <div id="passengersCheckBoxList">
+                        {this.passengersCheckBoxArray}
+                        <button onClick={this.handleAddTrip} className="saveButtonTrip">Save</button>
+                    </div>
                 </div>
-                <button className="cancelTripButton">Cancel</button>
+                <button onClick={this.props.onCancelAddTripClick} className="cancelTripButton">Cancel</button>
             </div>
         )
     }

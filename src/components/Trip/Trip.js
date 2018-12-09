@@ -2,6 +2,7 @@ import React from 'react';
 
 const Trip = ({ id, departureAirport, destinationAirport, departureTime, arrivalTime, passengers }) => {
 
+    passengers = passengers.join(', ');
     const deleteTripFromUI = (tripRow) => {
         tripRow.parentNode.parentNode.parentNode.removeChild(tripRow.parentNode.parentNode);
     }
