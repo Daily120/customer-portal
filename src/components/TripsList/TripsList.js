@@ -10,7 +10,7 @@ const TripsList = ({ tripsList, onAddTripClick }) => {
     })
 
     return (
-        <div id="trips">
+        <div id="trips" className="white-bg">
             <p>Trips</p>
             <table id="table-trips">
                 <tbody className="tripsTBody">

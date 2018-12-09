@@ -9,7 +9,7 @@ const PassengersList = ({ passengersList, onAddPassengerClick }) => {
     })
 
     return (
-        <div id="passengers">
+        <div id="passengers" className="white-bg">
             <p>Passengers</p>
             <table id="table-passengers">
                 <tbody className="passengersTBody">

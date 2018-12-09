@@ -22,7 +22,13 @@ const handleSaveCustomer = () => {
             country
         })
     }).then(res => res.json())
-    .then(data=> console.log(data))
+    .then(data=> {
+        if(data.name) {
+            window.location.reload();
+        } else {
+            alert('Ooops! Something went wrong. Try again!');
+        }
+    })
 }
 
 class BasicInfo extends Component {
@@ -61,7 +67,7 @@ class BasicInfo extends Component {
     render() {
         const { email, name, address, city, country} = this.state;
         return (
-            <div id="basicInfo">
+            <div id="basicInfo" className="white-bg">
                     <p>Basic Info</p>
                 <div className="div-under-basicInfo">
                     <label htmlFor="basicInfoEmailField">Email</label>

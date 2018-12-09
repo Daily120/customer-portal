@@ -1,7 +1,9 @@
 #header {
-    height: 100px;
-    width: 100%;
-    margin: 0;
+    height: 65px;
+    width: 90vw;
+    margin: auto;
+    border-bottom: 1px solid beige;
+    margin-bottom: 10px;
 }
 
 #header h1 {

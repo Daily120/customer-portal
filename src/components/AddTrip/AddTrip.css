@@ -5,6 +5,10 @@
     margin: 0 0 25px 50px;
     display: flex;
     flex-flow: column;
+    background-color: white;
+    position: absolute;
+    top: 580px;
+    left: 20vw;
 }
 
 .add-trip-P {
