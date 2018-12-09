@@ -16,8 +16,12 @@ const handleLogin = (app) => {
         })
     }).then(res => res.json())
     .then(data => {
-        localStorage.setItem('token', data.token);
-        app.setState(data);
+        if(data.token) {
+            localStorage.setItem('token', data.token);
+            app.setState(data);
+        } else {
+            alert('Wrong Credentials!')
+        }
     })
 }
 

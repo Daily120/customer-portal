@@ -10,6 +10,7 @@ class App extends Component {
     this.state = {
       
     }
+    fetch('http://localhost:3001');
   }
 
   onAddPassengerClick = () => {
