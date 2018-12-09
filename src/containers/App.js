@@ -10,7 +10,7 @@ class App extends Component {
     this.state = {
       
     }
-    fetch('http://localhost:3001');
+    fetch('https://customerportalgb.herokuapp.com');
   }
 
   onAddPassengerClick = () => {
@@ -40,7 +40,7 @@ class App extends Component {
   componentDidMount = () => {
     if(localStorage.token) {
       const auth = `Bearer ${localStorage.token}`;
-      fetch('http://localhost:3001/auth', {
+      fetch('https://customerportalgb.herokuapp.com/auth', {
         headers: {
           authorization: auth
         }

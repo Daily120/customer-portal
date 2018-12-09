@@ -7,9 +7,9 @@
     display: flex;
     flex-flow: column;
     background-color: white;
-    position: absolute;
+    position: fixed;
     left: 20vw;
-    top: 495px;
+    top: 25vh;
 }
 
 .add-Passenger-P {

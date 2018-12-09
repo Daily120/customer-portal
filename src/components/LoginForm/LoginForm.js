@@ -5,7 +5,7 @@ const handleLogin = (app) => {
     const email = document.getElementById('emailField').value;
     const password = document.getElementById('passwordField').value;
 
-    fetch('http://localhost:3001/signin', {
+    fetch('https://customerportalgb.herokuapp.com/signin', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

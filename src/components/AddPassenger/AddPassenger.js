@@ -27,7 +27,7 @@ class AddPassenger extends Component {
 
     handleAddPassenger = () => {
         const { title, firstname, surname, passportid } = this.state;
-        fetch('http://localhost:3001/passengers', {
+        fetch('https://customerportalgb.herokuapp.com/passengers', {
             method: 'POST',
             headers: {
                 authorization: `Bearer ${localStorage.token}`,

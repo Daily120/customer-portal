@@ -12,7 +12,7 @@ const handleDeletePassenger = (event) => {
     const passenger = event.target;
     const passengerId = passenger.id.split(' ')[1];
     
-    fetch('http://localhost:3001/passengers', {
+    fetch('https://customerportalgb.herokuapp.com/passengers', {
         method: 'DELETE',
         headers: {
             authorization: `Bearer ${localStorage.token}`,

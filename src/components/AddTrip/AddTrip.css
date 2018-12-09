@@ -6,8 +6,8 @@
     display: flex;
     flex-flow: column;
     background-color: white;
-    position: absolute;
-    top: 580px;
+    position: fixed;
+    top: 20vh;
     left: 20vw;
 }
 

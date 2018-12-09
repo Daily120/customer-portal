@@ -15,7 +15,7 @@ const Trip = ({ id, departureAirport, destinationAirport, departureTime, arrival
         const trip = event.target;
         const tripID = trip.id.split(' ')[1]; 
 
-        fetch('http://localhost:3001/trips', {
+        fetch('https://customerportalgb.herokuapp.com/trips', {
             method: 'DELETE',
             headers: {
                 authorization: `Bearer ${localStorage.token}`,

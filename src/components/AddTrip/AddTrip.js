@@ -67,7 +67,7 @@ class AddTrip extends Component {
         const { departure_airport, destination_airport, departureDate, departureTime, arrivalDate, arrivalTime, passengersList } = this.state;
         const departure_time = `${departureDate} ${departureTime}`;
         const arrival_time = `${arrivalDate} ${arrivalTime}`;
-        fetch('http://localhost:3001/trips', {
+        fetch('https://customerportalgb.herokuapp.com/trips', {
             method: 'POST',
             headers: {
                 authorization: `Bearer ${localStorage.token}`,

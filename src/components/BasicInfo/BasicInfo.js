@@ -8,7 +8,7 @@ const handleSaveCustomer = () => {
     const city = document.getElementById('cityField').value;
     const country = document.getElementById('countryField').value;
 
-    fetch('http://localhost:3001/customers', {
+    fetch('https://customerportalgb.herokuapp.com/customers', {
         method: 'PUT',
         headers: {
             authorization: `Bearer ${localStorage.token}`,
